@@ -1,26 +1,174 @@
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-       #map {
+       #map,
+       #pano{
         height: 100%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(60%);
       }
       
       /* Optional: Makes the sample page fill the window. */
       html,
       body {
         height: 100%;
-        margin: 20px;
+        width: 100%;
+        margin: 0 auto;
         padding: 0;
+        background-color: black;
       }
 
+
+      p {
+        font-size: 20px;
+        font-family: 'Righteous', cursive;
+        font-weight: lighter;
+        text-align: center;
+        color: #fff;
+      }
+
+      nav {
+          float: center;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        border-bottom: 1px solid #fff;
+      }
+
+      nav ul li {
+        font-size: 40px;
+        font-family: 'Righteous', cursive;
+        font-weight: lighter;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+      }
+
+      .title {
+        font-size: 90px;
+        font-family: 'Righteous', cursive;
+        font-weight: lighter;
+        color: #fff;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .logo-container {
+        height: 200px;
+        float: right;
+      }
+
+      .logo-container img {
+        height: 17%;
+        position: absolute;
+        border-right: 70px;
+      }
+
+    
       .map-container{
         width: 100vw;
         height: 100vh;
         display: grid;
-        grid-template-columns: 1fr 4fr;
+        grid-template-columns: 1fr 3fr;
       }
 
-      .resturant-details {
-        background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%)
+      .restaurant-list-container{
+        background-color: #000303;;
+        overflow: auto;
+        max-height: 100vh
       }
-
       
+      .restaurant-list {
+        background-color: #0c0f0f;
+        color: #fff;
+        border: 1px white solid;
+        margin: 1rem;
+      }
+      .restaurant-list p {
+        font-size: 1rem;
+        margin: 0 auto;
+      }
+
+/*******************************************
+      the info window style
+      ***************************************/
+      .gm-style-iw-d {
+        background-color: rgb(223, 223, 223);
+        color: #693e4b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        margin: 0;
+        padding: 5px 10px 5px 10px;
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border-radius: 10px;
+      }
+
+      .gm-style-iw.gm-style-iw-c {
+        background-color: #693e4b;
+        box-shadow: #111 0 0 20px;
+       transition: all 2s;
+      }
+
+
+      button.gm-ui-hover-effect {
+        color: white;
+      }
+
+      button {
+        background-color: #693e4b;
+      }
+      
+
+      .stars-outer {
+        display: inline-block;
+        position: relative;
+        font-family: FontAwesome;
+      }
+      
+      .stars-outer::before {
+        content: "\f006 \f006 \f006 \f006 \f006";
+      }
+      
+      .stars-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+      }
+      
+      .stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        color: #f8ce0b;
+      }
+      
+      .attribution {
+        font-size: 12px;
+        color: #444;
+        text-decoration: none;
+        text-align: center;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: -1;
+      }
+      .attribution:hover {
+        color: #1fa67a;
+      }

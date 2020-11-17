@@ -2,15 +2,15 @@
   "name": "find_table",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "routes.js",
   "scripts": {
-    "start": "nodemon src/server/routes.js"
+    "start": "node routes.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FelipeCostaBR/find_table.git"
   },
-  "keywords": [],
+  "keywords": ["heroku"],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,11 +20,13 @@
   "dependencies": {
     "axios": "^0.21.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "pg": "^8.5.0",
-    "requestify": "^0.2.5"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
-  }
+  },
+  "engines": {
+    "node": "15.x",
+    "npm": "6.x"
+ }
 }
