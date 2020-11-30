@@ -71,13 +71,13 @@ function createRestaurantList(restaurant) {
   name.setAttribute("data-id", restaurant.place_id);
   name.innerHTML = `Name: ${restaurant.name}`;
 
-  let openNow = document.createElement("p");
-  openNow.className = "restaurant-open-now";
-  if (restaurant.opening_hours.open_now) {
-    openNow.innerHTML = `Open now 😋`;
-  } else {
-    openNow.innerHTML = `Close 🥺`;
-  }
+  // let openNow = document.createElement("p");
+  // openNow.className = "restaurant-open-now";
+  // if (restaurant.opening_hours.open_now) {
+  //   openNow.innerHTML = `Open now 😋`;
+  // } else {
+  //   openNow.innerHTML = `Close 🥺`;
+  // }
 
   let rating = document.createElement("p");
   rating.className = "restaurant-rating";
