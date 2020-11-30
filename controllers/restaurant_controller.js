@@ -13,7 +13,7 @@ function restaurantsLocation(userLat, userLog) {
 function restaurantsDetails(place_id) {
   return axios.get(
     `https://maps.googleapis.com/maps/api/place/details/json?place_id=${place_id}&key=AIzaSyAg6Nm4Yu6w2hfIuI3stQZcdZMuPO0XlUM`
-  );
+  )
 }
 
 module.exports = {
