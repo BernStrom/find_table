@@ -8,15 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FelipeCostaBR/find_table.git"
+    "url": "git+https://github.com/BernStrom/find_table"
   },
-  "keywords": ["heroku"],
+  "keywords": [
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FelipeCostaBR/find_table/issues"
-  },
-  "homepage": "https://github.com/FelipeCostaBR/find_table#readme",
   "dependencies": {
     "axios": "^0.21.0",
     "ejs": "^3.1.5",
@@ -26,7 +24,7 @@
     "nodemon": "^2.0.6"
   },
   "engines": {
-    "node": "15.x",
+    "node": "14.15.0",
     "npm": "6.x"
- }
+  }
 }
