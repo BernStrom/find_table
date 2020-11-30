@@ -33,7 +33,6 @@ app.get('/restaurant/details/:place_id',(request, response) => {
     if(!place_id.includes('.')){
        // parameters is place id from front-end
        restaurantsDetails(place_id).then(res => {
-       
            response.render('restaurant_details',{restaurantsInfo: res.data.result})
        })
     }
