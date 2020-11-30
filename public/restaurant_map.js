@@ -88,7 +88,7 @@ function createRestaurantList(restaurant) {
   vicinity.innerHTML = `${restaurant.vicinity}`;
 
   restaurantList.appendChild(name);
-  restaurantList.appendChild(openNow);
+  // restaurantList.appendChild(openNow);
   restaurantList.appendChild(rating);
   restaurantList.appendChild(vicinity);
 }
