@@ -38,15 +38,4 @@ app.get('/restaurant/details/:place_id',(request, response) => {
     }
 })
 
-
-// path to open the index.html in the browser
-// http://localhost:3333/index.html
 app.listen(process.env.PORT || 3333);
-
-
-// PLaces API: Pl9AIzaSyD4AHUaAEtY1X5EpSfn8bPZW1SwVMqBpG4
-
-// maps javascript API: AIzaSyDgyjupXJdzaQcPUB66eGDY8VcjZLwTT8M
-
-//NEW DETAILS TO BE ADDED TO ORIGINAL PROJECT
-
